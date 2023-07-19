@@ -9,7 +9,7 @@
   MAIN BODY LAYOUT
 ========== */
 #hero {
-  background-image: url("/index-img/pexels-pavel-danilyuk-5496467.jpg");
+  background-image: url("https://raw.githubusercontent.com/silencecoder-page/home.com/main/index-img/pexels-pavel-danilyuk-5496467.jpg");
   background-size: cover;
   background-position: 50% 35%;
 }

@@ -1,0 +1,150 @@
+:root {
+  --primaryColor: #f0f8ff;
+  --button: #00c89e;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.sliderContaier {
+  min-height: 100vh;
+  padding: 0.5em;
+  overflow: hidden;
+}
+
+.sliderContaier {
+  margin: 2em 0px;
+  box-shadow: -12px -12px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sliderWrapper {
+  height: 92vh;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+.slideItem {
+  min-height: 46vh;
+  max-height: 46vh;
+  margin-bottom: 0.5vh;
+  width: 100%;
+  cursor: pointer;
+}
+
+.slideItem:hover,
+.slideItem:focus {
+  opacity: 0.9;
+}
+
+.controlsContainer {
+  height: 5vh;
+  padding: 0px 0.5em;
+  margin-top: 4em;
+}
+
+.slideButtons {
+  margin: 0px auto;
+  width: 12rem;
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.slideBTN {
+  height: inherit;
+  max-width: 5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.slideBTN:hover,
+.slideBTN:hover {
+  transform: scale(1.32);
+  border-radius: inherit;
+}
+
+/*-----------
+ IMAGE VIEWER
+-------------*/
+.photoWindow {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primaryColor);
+  z-index: 1000;
+}
+
+.imgviewerClose {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  background-color: #f0f8ff;
+}
+
+.photoWindow .selectedItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ------------
+BIG SCREEN QUERY
+------------- */
+@media (min-width: 660px) {
+  .sliderContaier {
+    max-width: 660px;
+  }
+}
+
+@media (min-width: 770px) {
+  .sliderContaier {
+    max-width: 100%;
+  }
+
+  .sliderWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 0.2em;
+  }
+}
+
+/*-------------------------
+ SLIDE CONTETNS UNAVAILABLE
+------------------------- */
+.slide_contents_unavailable {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -12px -12px 5px rgba(0, 0, 0, 0.2);
+}
+
+.no-slide-contents {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+/*-------------------------------
+ SLIDE CONTETNS UNAVAILABLE QUERY
+------------------------- ------*/
+
+@media (min-width: 770px) {
+  .no-slide-contents {
+    font-size: 1.5rem;
+  }
+}

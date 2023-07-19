@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="silence-coder.main">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silence Coder Blog</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/asserts/css/default.css">
+    <link rel="stylesheet" href="/asserts/css/slider.css">
+    <link rel="stylesheet" href="/asserts/css/header-footer.css">
+    <!-- Scripts -->
+    <script src="/asserts/javascript/jquery-3.7.0.min.js" defer></script>
+    <script src="/asserts/javascript/port_blo.js" defer></script>
+    <script type="module" src="/asserts/javascript/template.js"></script>
+
+    <style>
+        #blog {
+            padding: 2em;
+        }
+
+        .dashBoard {
+            height: 20rem;
+        }
+
+        .boardLayout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* PATH */
+        .page_path {
+            display: block;
+            margin: 0px auto;
+        }
+
+        .page_path_layout {
+            display: inline-flex;
+            gap: 1em;
+        }
+
+        .page_path h2 {
+            color: black;
+        }
+
+        .home_path::after,
+        .main_path::after {
+            content: ">";
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <silence-nav></silence-nav>
+    <!-- END OF NAVIGATION -->
+
+    <section id="blog">
+
+        <div class="dashBoard boardLayout">
+            <div class="page_path page_path_layout">
+                <h2 class="home_path">Home</h2>
+                <h2 class="main_path">Blog</h2>
+            </div>
+        </div>
+
+        <!-- No Contents -->
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <silence-footer></silence-footer>
+    <!-- END OF FOOTER -->
+</body>
+
+</html>

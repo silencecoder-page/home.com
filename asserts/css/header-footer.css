@@ -1,0 +1,200 @@
+:root {
+  --monoprimaryColor: #f0f8ff;
+  --diprimaryColor: #00c89e;
+  --triprimaryColor: #040431;
+  --fouprimaryColor: hsl(36, 78%, 73%);
+}
+
+/* =========
+Nav Styling
+========== */
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+.navButton {
+  height: 2rem;
+  width: 2rem;
+}
+
+.nav_container {
+  height: 5rem;
+  padding: 0px 0.5em;
+}
+
+.nav_container_layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--monoprimaryColor);
+  box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.5);
+  background-color: #00c89dc6;
+}
+
+/* ------
+NAV LOGO
+---------*/
+.logo_text {
+  font-size: 1.5rem;
+}
+
+.nav_text_dot {
+  color: var(--fouprimaryColor);
+  font-size: 2em;
+}
+
+.nav_text_highlight {
+  color: var(--fouprimaryColor);
+}
+
+/*NAV ITEMS  */
+.nav_items_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  padding: 2em;
+  z-index: 100;
+  background-color: var(--diprimaryColor);
+}
+
+.nav_items_box_layout {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav_list_contanier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  padding: 1em;
+}
+
+.nav_item a {
+  color: var(--monoprimaryColor);
+  font-style: normal;
+}
+
+.nav_item:hover a,
+.nav_item:focus {
+  color: rgba(240, 248, 255, 0.5);
+}
+
+.nav_items_box {
+  display: none;
+}
+
+/* NAV QUERY */
+@media screen and (min-width: 770px) {
+  li {
+    list-style: none;
+  }
+
+  .navButton {
+    display: none;
+  }
+
+  .nav_items_box {
+    display: block;
+    position: initial;
+    padding: initial;
+    max-width: fit-content;
+    min-height: fit-content;
+    background-color: initial;
+  }
+
+  .nav_list_contanier {
+    flex-direction: row;
+    align-items: center;
+    gap: 0px 1.5em;
+    padding: 1em;
+  }
+}
+/* -------------------------------- */
+
+/* ========
+FOOTER STYLING
+========== */
+#base_footer {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 0.9rem;
+  background: var(--monoprimaryColor);
+  box-shadow: -12px -12px 5px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+  order: 2;
+}
+
+.socail_footer_links {
+  width: 100%;
+}
+
+.socail_footer_link_item {
+  margin: 0.8em 0px;
+  padding: 0.5em;
+}
+
+/* ==============
+FOOTER QUERY
+================ */
+@media (min-width: 400px) {
+  #base_footer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socail_footer_links {
+    max-width: 10em;
+  }
+  .socail_footer_links div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 710px) {
+  #base_footer {
+    margin-top: auto;
+    flex-direction: row;
+    height: 4rem;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 5rem;
+  }
+
+  .copyright {
+    order: initial;
+    height: 100%;
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  .socail_footer_links {
+    display: inline-flex;
+    max-width: initial;
+    gap: 2rem;
+    margin-right: 1em;
+  }
+
+  .socail_footer_links div {
+    border-radius: 0px;
+    padding: 0.7rem;
+  }
+}

@@ -1,0 +1,162 @@
+.header_el {
+  margin: 1.5em 0px;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+}
+
+/* HEADER */
+.offer {
+  border-bottom: 1px solid var(--diprimaryColor);
+}
+
+/* PAGE */
+.page {
+  min-height: 100%;
+  width: 100%;
+  padding-top: 4em;
+}
+
+.container {
+  display: block;
+  margin: auto 0px;
+  height: 100%;
+}
+
+.pagelayout {
+  padding: 0.5em;
+}
+
+.page_img_sec {
+  position: relative;
+  width: 100%;
+}
+
+.page_img_sec,
+.page_img_sec img {
+  border-radius: 5px;
+}
+
+.page_img_sec img {
+  height: 100%;
+  width: 100%;
+}
+
+.page_from_sec {
+  display: block;
+  width: 100%;
+  padding: 1em;
+}
+
+#clientEmail,
+#clientsNumber,
+#clientsMessage {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#clientEmail,
+#clientsNumber {
+  height: 3em;
+}
+
+#clientsMessage {
+  height: 10em;
+  resize: none;
+}
+
+/* BUTTON */
+.button_margin_box {
+  min-height: fit-content;
+  width: 100%;
+}
+
+#submitButton {
+  display: block;
+  margin: 0px auto;
+}
+
+/* Media Guery */
+@media screen and (min-width: 360px) {
+  .page_img_sec {
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .page_img_sec,
+  .page_img_sec img {
+    border-radius: 5px;
+  }
+
+  #submitButton {
+    margin: 0px auto;
+    max-width: 25%;
+    margin-top: 2em;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .page_img_sec,
+  .page_from_sec {
+    margin: 0px auto;
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .page_img_sec img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .pagelayout {
+    display: flex;
+    height: 35rem;
+  }
+
+  .page_img_sec,
+  .page_from_sec {
+    height: 100%;
+    width: 100%;
+  }
+
+  .page_from_sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .page_from_sec form {
+    margin: 0px auto;
+    width: 80%;
+    height: 70%;
+  }
+
+  #clientEmail,
+  #clientsNumber {
+    height: 3em;
+  }
+
+  #clientMessage {
+    height: 10em;
+    resize: both;
+    color: black;
+  }
+}
+
+.desc {
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+.desc_contents {
+  padding: 0.5em;
+  text-indent: 1em;
+  font-size: 1rem;
+}

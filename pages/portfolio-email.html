@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="silence-coder.main">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silence coder make an order page</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/asserts/css/default.css">
+    <link rel="stylesheet" href="/asserts/css/header-footer.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="/asserts/css/portfolio-email.css">
+    <!-- SCRIP -->
+    <script src="/asserts/javascript/jquery-3.7.0.min.js" defer></script>
+    <script src="/asserts/javascript/portfolio-email.js" defer></script>
+    <script type="module" src="/asserts/javascript/template.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <silence-nav></silence-nav>
+
+    <!-- PAGE SECTION -->
+    <section class="page">
+
+        <!--PAGE HEADER -->
+        <div class="pageheader header_el">
+            <span class="offer">
+                make an order
+            </span>
+        </div>
+
+        <!-- PAGE DESC -->
+        <div class="desc transBG">
+            <p class="desc_contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dignissimos ipsum non ducimus molestias eum optio rerum, culpa assumenda cupiditate, 
+                exercitationem perferendis eveniet placeat doloribus. Maiores.
+            </p>
+        </div>
+
+        <!-- PAGE CONTENTS -->
+        <div class="container pagelayout">
+            <div class="page_img_sec">
+                <img id="selectedImage" src="" alt="" srcset="">
+                <div class="floatPriceBox"><span id="selectedPrice" class="floatPriceTag">0$</span></div>
+            </div>
+            <div class="page_from_sec">
+                <form action="https://formsubmit.co/michaelbright882@gmail.com" method="post">
+                    <input class="defaultInputs" id="clientEmail" name="email" type="email" name="" placeholder="Active Email"
+                        required>
+                    <input class="defaultInputs" id="clientsNumber" name="tel" type="tel" placeholder="Active Telephone Number"
+                        required>
+                    <input type="hidden" name="_capture" value="false">
+                    <input type="hidden" name="_next" value="index.html">
+                    <textarea class="defaultInputs" id="clientsMessage" name="" cols="30" rows="10"
+                        placeholder="Add Some Message"></textarea>
+                    <div class="button_margin_box">
+                        <button class="defaultWhiteButton" id="submitButton" type="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <silence-footer></silence-footer>
+</body>
+
+</html>

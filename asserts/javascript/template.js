@@ -10,18 +10,18 @@ class silenceNav extends HTMLElement {
             <div class="nav_items_box">
                 <div class="nav_items_box_layout">
                   <ul class="nav_list_contanier">
-                    <li class="nav_item"><a href="/index.html">Home</a></li>
-                    <li class="nav_item"><a href="/pages/portfolio-main.html">portfolio</a></li>
-                    <li class="nav_item"><a href="/pages/blog-main.html">Blog</a></li>
-                    <li class="nav_item"><a href="/index.html#about">About</a></li>
-                    <li class="nav_item"><a href="/index.html#contact">Contact</a></li>
+                    <li class="nav_item"><a href="index.html">Home</a></li>
+                    <li class="nav_item"><a href="pages/portfolio-main.html">portfolio</a></li>
+                    <li class="nav_item"><a href="pages/blog-main.html">Blog</a></li>
+                    <li class="nav_item"><a href="index.html#about">About</a></li>
+                    <li class="nav_item"><a href="index.html#contact">Contact</a></li>
                   </ul>
                   <!-- NAV CLOSE -->
-                  <img id="munuClose" class="navButton" src="/main-icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="" srcset="">
+                  <img id="munuClose" class="navButton" src="main-icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="" srcset="">
                 </div>
             </div>
             <!-- Nav Button -->
-            <img id="munuOpen" class="navButton" src="/main-icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="" srcset="">
+            <img id="munuOpen" class="navButton" src="main-icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="" srcset="">
           </div>
         </nav>
         `;

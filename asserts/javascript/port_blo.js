@@ -49,8 +49,8 @@ $("document").ready(() => {
             <!-- slide Controls -->
             <div class="controlsContainer">
                 <div class="slideButtons">
-                    <img id="slideLeft" class="slideBTN" src="/main-icons/icons8-scroll-up-50.png" alt="" srcset="">
-                    <img id="slideRight" class="slideBTN" src="/main-icons/icons8-scroll-down-50.png" alt="" srcset="">
+                    <img id="slideLeft" class="slideBTN" src="main-icons/icons8-scroll-up-50.png" alt="" srcset="">
+                    <img id="slideRight" class="slideBTN" src="main-icons/icons8-scroll-down-50.png" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@ $("document").ready(() => {
     }
   };
 
-  // ADDEVENTS
+  // ADD EVENTS
   const createEvents = function () {
     // PAGE INTERACTION
     const slideLeft = document.getElementById("slideLeft");
@@ -163,7 +163,7 @@ $("document").ready(() => {
       selectedItem.alt = desc
       // Setting Source
       selectedItem.src = src;
-      imgviewerClose.src = "/main-icons/close_FILL0_wght400_GRAD0_opsz48.svg";
+      imgviewerClose.src = "main-icons/close_FILL0_wght400_GRAD0_opsz48.svg";
       // Setting EventLister
       imgviewerClose.addEventListener("click", windowContanoerRemover);
       orderButton.addEventListener("click", itemMainPage);

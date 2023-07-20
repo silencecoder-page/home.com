@@ -193,7 +193,7 @@ $("document").ready(() => {
       localStorage.setItem("SRC", source);
       localStorage.setItem("PRICE", pri_data);
       localStorage.setItem("DESC", desc);
-      window.location.href = "pages/portfolio-email.html";
+      window.location.href = "pages//portfolio-email.html";
     }
   };
 
